@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f3f0e9">
+  <meta name="description" content="PulseFit personal training studio offering individual coaching, strength training and mobility sessions. View programs, sample rates and booking details.">
+  <title>PulseFit — Personal Training Studio</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <a class="brand" href="#home" aria-label="PulseFit home">
+          <span class="brand-mark" aria-hidden="true">P</span>
+          <span>PulseFit</span>
+        </a>
+
+        <nav class="desktop-nav" aria-label="Main navigation">
+          <a href="#home" data-i18n="nav.home">Home</a>
+          <a href="#programs" data-i18n="nav.programs">Programs</a>
+          <a href="#approach" data-i18n="nav.approach">Approach</a>
+          <a href="#trainer" data-i18n="nav.trainer">Trainer</a>
+          <a href="#faq" data-i18n="nav.faq">FAQ</a>
+          <a href="#contact" data-i18n="nav.contact">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+          <div class="language-switcher" role="group" aria-label="Language">
+            <button type="button" data-language="en" class="active" aria-pressed="true">EN</button>
+            <button type="button" data-language="ru" aria-pressed="false">RU</button>
+            <button type="button" data-language="uk" aria-pressed="false">UK</button>
+          </div>
+          <button class="button button-dark header-book" type="button" data-open-booking data-i18n="common.book">Book a session</button>
+          <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu">
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="mobile-nav" id="mobile-nav" hidden>
+        <nav class="container" aria-label="Mobile navigation">
+          <a href="#home" data-i18n="nav.home">Home</a>
+          <a href="#programs" data-i18n="nav.programs">Programs</a>
+          <a href="#approach" data-i18n="nav.approach">Approach</a>
+          <a href="#trainer" data-i18n="nav.trainer">Trainer</a>
+          <a href="#faq" data-i18n="nav.faq">FAQ</a>
+          <a href="#contact" data-i18n="nav.contact">Contact</a>
+          <button class="button button-sage" type="button" data-open-booking data-i18n="common.book">Book a session</button>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section" id="home">
+        <div class="container">
+          <div class="hero-layout">
+            <div class="hero-copy">
+              <p class="eyebrow" data-i18n="hero.eyebrow">PERSONAL TRAINING STUDIO</p>
+              <h1 data-i18n="hero.title">Personal training, built around you.</h1>
+              <p class="hero-description" data-i18n="hero.description">Individual coaching focused on strength, mobility and a sustainable approach to movement.</p>
+              <div class="hero-actions">
+                <button class="button button-sage" type="button" data-open-booking data-i18n="common.book">Book a session</button>
+                <a class="text-link" href="#programs"><span data-i18n="hero.explore">Explore programs</span><span aria-hidden="true">↗</span></a>
+              </div>
+              <p class="hero-note" data-i18n="hero.note">One-to-one coaching · All experience levels</p>
+            </div>
+            <figure class="hero-visual">
+              <img src="https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?auto=format&fit=crop&w=1600&q=85" alt="Athletes training in a bright fitness studio" data-i18n-alt="hero.alt" fetchpriority="high">
+              <figcaption data-i18n="hero.caption">TRAIN AT YOUR OWN PACE</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="programs-section section" id="programs">
+        <div class="container">
+          <div class="section-heading section-heading-split">
+            <div>
+              <p class="eyebrow" data-i18n="programs.eyebrow">TRAINING PROGRAMS</p>
+              <h2 data-i18n="programs.title">Find your way to move.</h2>
+            </div>
+            <p class="section-intro" data-i18n="programs.intro">Choose a focus. Each session is adapted to your experience, needs and progress.</p>
+          </div>
+
+          <div class="program-grid">
+            <article class="program-card">
+              <img src="https://images.unsplash.com/photo-1540206276207-3af25c08abc4?auto=format&fit=crop&w=1000&q=80" alt="Personal coaching session" data-i18n-alt="programs.personalAlt" loading="lazy">
+              <div class="program-card-content">
+                <div class="program-card-top"><span>01</span><button type="button" class="icon-button" data-open-booking data-program="personal" aria-label="Book personal training">↗</button></div>
+                <h3 data-i18n="programs.personalTitle">Personal Training</h3>
+                <p class="program-price" data-i18n="programs.personalPrice">$45 / 50 min</p>
+                <p data-i18n="programs.personalText">One-to-one sessions with personal coaching, clear structure and adjustments along the way.</p>
+                <button class="card-link" type="button" data-open-booking data-program="personal"><span data-i18n="programs.learnMore">Learn more</span><span aria-hidden="true">→</span></button>
+              </div>
+            </article>
+
+            <article class="program-card">
+              <img src="https://images.unsplash.com/photo-1584863231364-2edc166de576?auto=format&fit=crop&w=1000&q=80" alt="Strength training in a gym" data-i18n-alt="programs.strengthAlt" loading="lazy">
+              <div class="program-card-content">
+                <div class="program-card-top"><span>02</span><button type="button" class="icon-button" data-open-booking data-program="strength" aria-label="Book strength training">↗</button></div>
+                <h3 data-i18n="programs.strengthTitle">Strength Training</h3>
+                <p class="program-price" data-i18n="programs.strengthPrice">$35 / 50 min</p>
+                <p data-i18n="programs.strengthText">Build useful strength and confidence through clear, progressive movement.</p>
+                <button class="card-link" type="button" data-open-booking data-program="strength"><span data-i18n="programs.learnMore">Learn more</span><span aria-hidden="true">→</span></button>
+              </div>
+            </article>
+
+            <article class="program-card">
+              <img src="https://images.unsplash.com/photo-1640262653851-103cbaf802d5?auto=format&fit=crop&w=1000&q=80" alt="Mobility exercise on a mat" data-i18n-alt="programs.mobilityAlt" loading="lazy">
+              <div class="program-card-content">
+                <div class="program-card-top"><span>03</span><button type="button" class="icon-button" data-open-booking data-program="mobility" aria-label="Book mobility training">↗</button></div>
+                <h3 data-i18n="programs.mobilityTitle">Mobility & Recovery</h3>
+                <p class="program-price" data-i18n="programs.mobilityPrice">$30 / 45 min</p>
+                <p data-i18n="programs.mobilityText">Improve range of motion, ease stiffness and support sustainable training.</p>
+                <button class="card-link" type="button" data-open-booking data-program="mobility"><span data-i18n="programs.learnMore">Learn more</span><span aria-hidden="true">→</span></button>
+              </div>
+            </article>
+          </div>
+          <p class="pricing-note" data-i18n="programs.priceNote">Example rates in USD. Replace these prices before publishing.</p>
+        </div>
+      </section>
+
+      <section class="approach-section section" id="approach">
+        <div class="container approach-layout">
+          <div class="approach-heading">
+            <p class="eyebrow" data-i18n="approach.eyebrow">HOW WE WORK</p>
+            <h2 data-i18n="approach.title">A clear path, one step at a time.</h2>
+            <p data-i18n="approach.intro">No generic templates. We start with where you are and build a plan that fits your life.</p>
+          </div>
+          <div class="steps-list">
+            <article class="step-item">
+              <span class="step-number">01</span>
+              <div><h3 data-i18n="approach.stepOneTitle">Consultation</h3><p data-i18n="approach.stepOneText">We discuss your goals, experience, schedule and what you need from coaching.</p></div>
+            </article>
+            <article class="step-item">
+              <span class="step-number">02</span>
+              <div><h3 data-i18n="approach.stepTwoTitle">Personal plan</h3><p data-i18n="approach.stepTwoText">Your trainer creates a realistic direction for your sessions and routine.</p></div>
+            </article>
+            <article class="step-item">
+              <span class="step-number">03</span>
+              <div><h3 data-i18n="approach.stepThreeTitle">Training</h3><p data-i18n="approach.stepThreeText">We train, track how you feel and adjust the plan as you progress.</p></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="trainer-section section" id="trainer">
+        <div class="container trainer-layout">
+          <div class="trainer-photo-wrap">
+            <img src="https://images.unsplash.com/photo-1574680088814-c9e8a10d8a4d?auto=format&fit=crop&w=1200&q=85" alt="Fitness trainer in a studio" data-i18n-alt="trainer.alt" loading="lazy">
+          </div>
+          <div class="trainer-content">
+            <p class="eyebrow" data-i18n="trainer.eyebrow">YOUR TRAINER</p>
+            <h2 data-i18n="trainer.name">Alex Morgan</h2>
+            <p class="trainer-role" data-i18n="trainer.role">PERSONAL TRAINER &amp; STRENGTH COACH</p>
+            <p class="trainer-description" data-i18n="trainer.bio">Alex is a personal trainer with 7 years of coaching experience. Sessions combine strength work, mobility and clear guidance, adapted to each client’s goals.</p>
+            <div class="trainer-details">
+              <p class="small-label" data-i18n="trainer.quals">COACHING BACKGROUND · SAMPLE PROFILE</p>
+              <ul>
+                <li data-i18n="trainer.qualOne">Personal training certification · example</li>
+                <li data-i18n="trainer.qualTwo">Strength and mobility coaching</li>
+                <li data-i18n="trainer.qualThree">7 years of coaching experience · example</li>
+              </ul>
+            </div>
+            <button class="button button-outline" type="button" data-open-booking><span data-i18n="common.book">Book a session</span><span aria-hidden="true">↗</span></button>
+          </div>
+        </div>
+      </section>
+
+      <section class="booking-banner">
+        <div class="container booking-banner-inner">
+          <div>
+            <p class="eyebrow" data-i18n="banner.eyebrow">GET STARTED</p>
+            <h2 data-i18n="banner.title">Start with a conversation.</h2>
+            <p data-i18n="banner.text">Tell us what you would like to work on. We will help you choose the right next step.</p>
+          </div>
+          <button class="button button-light" type="button" data-open-booking><span data-i18n="common.book">Book a session</span><span aria-hidden="true">↗</span></button>
+        </div>
+      </section>
+
+      <section class="faq-section section" id="faq">
+        <div class="container faq-layout">
+          <div class="faq-heading">
+            <p class="eyebrow" data-i18n="faq.eyebrow">GOOD TO KNOW</p>
+            <h2 data-i18n="faq.title">Frequently asked questions.</h2>
+          </div>
+          <div class="faq-list">
+            <article class="faq-item open">
+              <h3><button type="button" aria-expanded="true" aria-controls="faq-answer-1"><span data-i18n="faq.qOne">Do I need training experience?</span><span class="faq-symbol" aria-hidden="true">−</span></button></h3>
+              <div class="faq-answer" id="faq-answer-1"><p data-i18n="faq.aOne">Not at all. Sessions are adapted to your current fitness, confidence and movement experience.</p></div>
+            </article>
+            <article class="faq-item">
+              <h3><button type="button" aria-expanded="false" aria-controls="faq-answer-2"><span data-i18n="faq.qTwo">What happens in the first session?</span><span class="faq-symbol" aria-hidden="true">+</span></button></h3>
+              <div class="faq-answer" id="faq-answer-2" hidden><p data-i18n="faq.aTwo">We talk through your goals and experience, explore how you move and agree on a comfortable starting point.</p></div>
+            </article>
+            <article class="faq-item">
+              <h3><button type="button" aria-expanded="false" aria-controls="faq-answer-3"><span data-i18n="faq.qThree">How do I choose a program?</span><span class="faq-symbol" aria-hidden="true">+</span></button></h3>
+              <div class="faq-answer" id="faq-answer-3" hidden><p data-i18n="faq.aThree">Choose the closest fit in the booking form. Your trainer can help refine the focus during your consultation.</p></div>
+            </article>
+            <article class="faq-item">
+              <h3><button type="button" aria-expanded="false" aria-controls="faq-answer-4"><span data-i18n="faq.qFour">Can I change or cancel a booking?</span><span class="faq-symbol" aria-hidden="true">+</span></button></h3>
+              <div class="faq-answer" id="faq-answer-4" hidden><p data-i18n="faq.aFour">Yes. Share your preferred contact method and we will explain the studio’s scheduling policy when confirming your request.</p></div>
+            </article>
+              <article class="faq-item">
+                <h3><button type="button" aria-expanded="false" aria-controls="faq-answer-5"><span data-i18n="faq.qFive">What should I bring?</span><span class="faq-symbol" aria-hidden="true">+</span></button></h3>
+                <div class="faq-answer" id="faq-answer-5" hidden><p data-i18n="faq.aFive">Comfortable training clothes, suitable shoes and water are a good start. We will share any specific guidance before your visit.</p></div>
+              </article>
+              <article class="faq-item">
+                <h3><button type="button" aria-expanded="false" aria-controls="faq-answer-6"><span data-i18n="faq.qSix">What are the studio hours?</span><span class="faq-symbol" aria-hidden="true">+</span></button></h3>
+                <div class="faq-answer" id="faq-answer-6" hidden><p data-i18n="faq.aSix">Monday to Friday, 07:00–21:00. Saturday, 09:00–15:00. Closed on Sunday.</p></div>
+              </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+      <div class="container">
+        <div class="footer-main">
+          <div class="footer-brand-block">
+            <a class="brand brand-footer" href="#home"><span class="brand-mark" aria-hidden="true">P</span><span>PulseFit</span></a>
+            <p data-i18n="footer.tagline">Personal coaching for stronger, more confident movement.</p>
+          </div>
+          <div class="footer-column">
+            <p class="small-label" data-i18n="footer.contact">CONTACT</p>
+            <a href="mailto:hello@pulsefit.example" data-i18n="footer.email">hello@pulsefit.example</a>
+            <a href="tel:+12025550147" data-i18n="footer.phone">+1 (202) 555-0147</a>
+            <span data-i18n="footer.address">Central District, Example City</span>
+            <p class="small-label footer-subheading" data-i18n="footer.hours">OPENING HOURS</p>
+            <span data-i18n="footer.weekdays">Mon–Fri: 07:00–21:00</span>
+            <span data-i18n="footer.weekend">Sat: 09:00–15:00 · Sun: Closed</span>
+          </div>
+          <div class="footer-column">
+            <p class="small-label" data-i18n="footer.follow">FOLLOW</p>
+            <a href="https://www.instagram.com/" target="_blank" rel="noreferrer" data-i18n="footer.instagram">Instagram · @pulsefit.demo</a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noreferrer" data-i18n="footer.facebook">Facebook · PulseFit Studio</a>
+          </div>
+          <div class="footer-column footer-navigation">
+            <p class="small-label" data-i18n="footer.navigation">NAVIGATION</p>
+            <a href="#programs" data-i18n="nav.programs">Programs</a>
+            <a href="#approach" data-i18n="nav.approach">Approach</a>
+            <a href="#trainer" data-i18n="nav.trainer">Trainer</a>
+            <a href="#faq" data-i18n="nav.faq">FAQ</a>
+            <a href="#contact" data-i18n="nav.contact">Contact</a>
+          </div>
+        </div>
+        <div class="footer-bottom"><div class="footer-bottom-copy"><span>© <span id="current-year"></span> <span data-i18n="footer.copyright">PulseFit. All rights reserved.</span></span><span class="footer-demo-note" data-i18n="footer.demoInfo">Demo business details and sample prices. Replace before launch.</span></div><a href="#top" aria-label="Back to top">↑</a></div>
+      </div>
+    </footer>
+  </div>
+
+  <dialog class="booking-dialog" id="booking-dialog" aria-labelledby="booking-title">
+    <div class="dialog-panel">
+      <button class="dialog-close" type="button" data-close-booking aria-label="Close booking form">×</button>
+      <div id="booking-form-view">
+        <p class="eyebrow" data-i18n="form.eyebrow">BOOKING REQUEST</p>
+        <h2 id="booking-title" data-i18n="form.title">Book a session</h2>
+        <p class="dialog-intro" data-i18n="form.intro">Share a few details and we will contact you to confirm a suitable time.</p>
+        <form id="booking-form">
+          <div class="form-grid">
+            <label class="form-field"><span data-i18n="form.name">Name</span><input name="name" type="text" autocomplete="name" required data-i18n-placeholder="form.namePlaceholder" placeholder="Your name"></label>
+            <label class="form-field"><span data-i18n="form.contact">Phone or email</span><input name="contact" type="text" autocomplete="email" required data-i18n-placeholder="form.contactPlaceholder" placeholder="How should we reach you?"></label>
+            <label class="form-field"><span data-i18n="form.program">Program</span><select name="program" id="program-select" required><option value="" data-i18n="form.selectProgram">Select a program</option><option value="personal" data-i18n="programs.personalTitle">Personal Training</option><option value="strength" data-i18n="programs.strengthTitle">Strength Training</option><option value="mobility" data-i18n="programs.mobilityTitle">Mobility & Recovery</option></select></label>
+            <label class="form-field"><span data-i18n="form.date">Preferred date</span><input name="date" id="booking-date" type="date" required></label>
+          </div>
+          <label class="form-field"><span data-i18n="form.message">Message (optional)</span><textarea name="message" rows="3" data-i18n-placeholder="form.messagePlaceholder" placeholder="Anything you would like us to know?"></textarea></label>
+          <p class="form-error" id="form-error" role="alert" hidden></p>
+          <button class="button button-sage form-submit" type="submit"><span data-i18n="form.submit">Send request</span><span aria-hidden="true">↗</span></button>
+          <p class="form-note" data-i18n="form.demoNote">Demo form: your details are not sent or stored.</p>
+        </form>
+      </div>
+      <div class="booking-success" id="booking-success" hidden aria-live="polite">
+        <span class="success-mark" aria-hidden="true">✓</span>
+        <p class="eyebrow" data-i18n="form.eyebrow">BOOKING REQUEST</p>
+        <h2 data-i18n="form.successTitle">Request ready</h2>
+        <p data-i18n="form.successText">This is a demo confirmation. No booking has been sent yet.</p>
+        <button class="button button-dark" type="button" data-close-booking data-i18n="form.done">Done</button>
+      </div>
+    </div>
+  </dialog>
+</body>
+</html>
